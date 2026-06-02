@@ -1,0 +1,23 @@
+:root{
+  --main-color: #55A630;
+  --text-color: #424242;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container{
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main{
+  width: 100%;
+}

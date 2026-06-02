@@ -1,0 +1,56 @@
+nav{
+    width: 100%;
+}
+
+nav .container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.nav_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 2px var(--main-color);
+}
+
+.nav_logo{
+    display: none;
+}
+
+.nav_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav_tel{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.nav_icon{
+    color: var(--main-color);
+    height: 28px;
+    width: 28px;
+}
+
+
+.nav_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_item a{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+}
