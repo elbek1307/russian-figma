@@ -9,6 +9,7 @@ import ru from "./russia.svg";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { AiFillFacebook } from "react-icons/ai";
 import { RiInstagramFill } from "react-icons/ri";
+import { RiMenu2Line } from "react-icons/ri";
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
@@ -22,6 +23,7 @@ export const Header = () => {
       <nav>
         <div className="container">
           <div className="nav_top">
+            <RiMenu2Line className="nav_menu" />
             <img src={Logo} className="nav_logo" alt="logo" />
             <img src={Logo_with} className="nav_logo_with" alt="logo" />
             <div className="nav_box">

@@ -54,3 +54,33 @@ nav .container{
     font-size: 16px;
     font-weight: 500;
 }
+
+.nav_menu{
+    width: 60px;
+    height: 50px;
+    color: var(--main-color);
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .nav_logo_with, .nav_facebook, .nav_instagram  , .select_menu, .nav_list{
+        display: none;
+    }
+
+    .nav_logo{
+        display: block;
+    }
+ 
+
+    .nav_menu{
+        display: block;
+    }
+
+
+}
+
+@media (max-width: 530px) {
+    .nav_box{
+        display: none;
+    }
+}
