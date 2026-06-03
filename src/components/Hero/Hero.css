@@ -89,3 +89,9 @@ color: white;
         font-size: 15px;
     }
 }
+
+@media (max-width: 570px) {
+    .hero .container{
+        flex-direction: column;
+    }
+}
