@@ -1,11 +1,11 @@
 .ser {
     padding: 50px 0;
-    background-color: #f8fbf6; 
+
 }
 
 .ser .container{
     width: 80%;
-    z-index: 3;
+
 }
 
 .ser_list {
@@ -18,38 +18,38 @@
     background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05); 
-    z-index: 3;
+    
 }
 
-/* Ser.css faylidagi eski .ser_item ni shu bilan almashtiring va tagidan hoverni qo'shing */
+
 
 .ser_item {
     text-align: center;
     flex: 1;
     padding: 20px 10px;
     border-radius: 8px;
-    /* Silliq o'tish effekti (animatsiya) uchun transition shart */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+  
+    transition:all 0.3s; 
 }
 
-/* Sichqoncha ustiga kelganda (Hover holati) */
+
 .ser_item:hover {
-    transform: translateY(-8px); /* Elementni 8px tepaga ko'taradi */
-    background-color: #ffffff;    /* Ichki foni oq bo'ladi */
-    box-shadow: 0px 8px 25px rgba(76, 175, 80, 0.15); /* Yashilroq va mayin soya beradi */
-    cursor: pointer; /* Sichqoncha ko'rsatkichini qo'lchaga aylantiradi */
+    transform: translateY(-8px);
+    background-color: #ffffff;   
+    box-shadow: 0px 8px 25px rgba(76, 175, 80, 0.15); 
+    cursor: pointer; 
 }
 
-/* Hover bo'lganda raqamning rangi ham biroz o'zgarishi uchun */
+
 .ser_item:hover .ser_item_num {
-    color: #2E7D32; /* To'qroq yashil rang */
+    color: #2E7D32; 
 }
 
 .ser_item_num {
     font-size: 42px;
     font-weight: 700;
-    color: #4CAF50; /* Rasmdagi yashil rang */
-    margin: 0 0 10px 0;
+    color: #4CAF50;
+    margin: 10px 0;
 }
 
 .ser_item_text {
@@ -57,14 +57,18 @@
     color: #666666;
     margin: 0;
     line-height: 1.4;
-    white-space: pre-line; /* JSON dagi \n belgisini o'qib, yangi qatorga tushirib beradi */
+    white-space: pre-line; 
 }
 
-/* Mobil qurilmalar uchun moslashuvchanlik */
+ 
 @media (max-width: 768px) {
     .ser_list {
         flex-direction: column;
         gap: 30px;
+    }
+
+    .ser_item{
+        width: 80%;
     }
 
     .ser .container{
