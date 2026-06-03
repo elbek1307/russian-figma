@@ -48,4 +48,10 @@
     color: var(--main-color);
     border: solid 1px var(--main-color);
     background: none;
+    transition: all 0.3s;
+}
+
+.hero_btn:hover{
+background-color: var(--main-color);
+color: white;
 }
