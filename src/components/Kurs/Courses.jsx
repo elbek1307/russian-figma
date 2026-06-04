@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Courses.css';
 
-// Rasmlarning haqiqiy manzilini shu yerga yozasiz
+
 import odam1 from "./odam1.png";
 import odam2 from "./odam2.png";
 import odam3 from "./odam3.png";
@@ -16,7 +16,7 @@ const Courses = () => {
                 <h2 className="courses_title">{t('courses.main_title')}</h2>
 
                 <ul className="courses_list">
-                    {/* --- 1-KARD (Ko'k) --- */}
+                   
                     <li className="course_item blue_theme">
                         <div className="course_content">
                             <span className="top_text">{t('courses.card1.top_text')}</span>
@@ -44,7 +44,7 @@ const Courses = () => {
                         </div>
                     </li>
 
-                    {/* --- 2-KARD (Yashil, markaziy) --- */}
+                   
                     <li className="course_item green_theme active_card">
                         <div className="course_content">
                             <span className="top_text">{t('courses.card2.top_text')}</span>
@@ -72,7 +72,7 @@ const Courses = () => {
                         </div>
                     </li>
 
-                    {/* --- 3-KARD (Havorang) --- */}
+                 
                     <li className="course_item teal_theme">
                         <div className="course_content">
                             <span className="top_text">{t('courses.card3.top_text')}</span>

@@ -1,0 +1,122 @@
+.nas {
+    padding: 80px 0;
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+.nas_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Rasm qismi */
+.nas_left {
+    width: 45%;
+}
+
+.nas_img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Matn qismi */
+.nas_right {
+    width: 55%;
+}
+
+.nas_subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+/* "О нас" yozuvi oldidagi dumaloq belgi */
+.nas_subtitle::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+}
+
+.nas_title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #444444;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.nas_title_green {
+    color: #51a540;
+    font-weight: 800;
+}
+
+.nas_texts p {
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Link o'ng burchakda turishi uchun */
+.nas_link_wrapper {
+    text-align: right; 
+    margin-top: 40px;
+}
+
+.nas_link {
+    color: #51a540;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s;
+}
+
+.nas_link:hover {
+    color: #3f8031;
+    transform: translateX(5px); /* Hoverda o'ngga biroz siljiydi */
+}
+
+.nas_arrow {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* =========================================
+   MEDIA QUERIES (Mobil uchun moslashuv)
+========================================= */
+@media (max-width: 992px) {
+    .nas_wrapper {
+        gap: 40px;
+    }
+    .nas_title {
+        font-size: 28px;
+    }
+    .nas_texts p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nas_wrapper {
+        flex-direction: column; /* Mobilda rasm tepaga, matn pastga o'tadi */
+    }
+    .nas_left, .nas_right {
+        width: 100%;
+    }
+    .nas_link_wrapper {
+        text-align: left; /* Mobilda link chapga o'tadi */
+    }
+}
