@@ -1,32 +1,23 @@
 .nas {
     padding: 80px 0;
-    font-family: sans-serif;
     background-color: #ffffff;
 }
 
-.nas_wrapper {
+.nas .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 60px;
-}
-
-/* Rasm qismi */
-.nas_left {
-    width: 45%;
-    height: 660px;
+    gap: 40px;
 }
 
 .nas_img {
-    width: 100%;
-    
+    width: 45%;
     height: auto;
-    display: block;
     object-fit: cover;
 }
 
-/* Matn qismi */
-.nas_right {
-    width: 55%;
+.nas_content {
+    width: 50%;
 }
 
 .nas_subtitle {
@@ -38,7 +29,7 @@
     margin-bottom: 20px;
 }
 
-/* "О нас" yozuvi oldidagi dumaloq belgi */
+/* Kichik dumaloq belgi */
 .nas_subtitle::before {
     content: "";
     display: inline-block;
@@ -49,76 +40,91 @@
 }
 
 .nas_title {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 800;
     color: #444444;
     line-height: 1.3;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .nas_title_green {
     color: #51a540;
-    font-weight: 800;
 }
 
-.nas_texts p {
+.nas_text {
     font-size: 18px;
     color: #555555;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 500;
 }
 
-/* Link o'ng burchakda turishi uchun */
-.nas_link_wrapper {
-    text-align: right; 
-    margin-top: 40px;
-}
-
 .nas_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
     color: #51a540;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
+    margin-top: 15px;
     transition: all 0.3s;
 }
 
 .nas_link:hover {
     color: #3f8031;
-    transform: translateX(5px); /* Hoverda o'ngga biroz siljiydi */
-}
-
-.nas_arrow {
-    font-size: 24px;
-    font-weight: 300;
+    transform: translateX(5px);
 }
 
 /* =========================================
-   MEDIA QUERIES (Mobil uchun moslashuv)
+   MEDIA QUERIES (Tablet va Mobil)
 ========================================= */
-@media (max-width: 992px) {
-    .nas_wrapper {
-        gap: 40px;
+
+/* Tablet versiya (830px dan kichik ekranlar) */
+@media (max-width: 830px) {
+    .nas .container {
+        flex-direction: column-reverse; /* Rasm pastga tushadi */
+        gap: 30px;
     }
-    .nas_title {
-        font-size: 28px;
+
+    .nas_img {
+        width: 80%; /* Rasm biroz kattalashadi */
     }
-    .nas_texts p {
-        font-size: 16px;
+
+    .nas_content {
+        width: 100%; /* Matn to'liq enini egallaydi */
     }
 }
 
-@media (max-width: 768px) {
-    .nas_wrapper {
-        flex-direction: column; /* Mobilda rasm tepaga, matn pastga o'tadi */
+/* Mobil versiya (540px dan kichik ekranlar) */
+@media (max-width: 540px) {
+    .nas .container {
+        padding: 0 15px; /* Mobilda chetlarga taqalib qolmasligi uchun */
     }
-    .nas_left, .nas_right {
-        width: 100%;
+
+    .nas_content {
+        text-align: center; /* Barcha matnlar markazga keladi */
     }
-    .nas_link_wrapper {
-        text-align: left; /* Mobilda link chapga o'tadi */
+
+    /* Subtitle (dumaloqcha bilan) markazga kelishi uchun */
+    .nas_subtitle {
+        justify-content: center;
+    }
+
+    /* Link markazga kelishi uchun */
+    .nas_link {
+        justify-content: center;
+    }
+
+    .nas_title {
+        font-size: 26px;
+    }
+
+    .nas_text {
+        font-size: 16px;
+    }
+
+    .nas_img {
+        width: 100%; /* Mobilda rasm to'liq enni egallaydi */
     }
 }
