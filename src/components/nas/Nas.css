@@ -12,7 +12,7 @@
 
 .nas_img {
     width: 45%;
-    height: auto;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -29,7 +29,7 @@
     margin-bottom: 20px;
 }
 
-/* Kichik dumaloq belgi */
+
 .nas_subtitle::before {
     content: "";
     display: inline-block;
@@ -76,42 +76,39 @@
     transform: translateX(5px);
 }
 
-/* =========================================
-   MEDIA QUERIES (Tablet va Mobil)
-========================================= */
 
-/* Tablet versiya (830px dan kichik ekranlar) */
 @media (max-width: 830px) {
     .nas .container {
-        flex-direction: column-reverse; /* Rasm pastga tushadi */
+        flex-direction: column-reverse; 
         gap: 30px;
     }
 
     .nas_img {
-        width: 80%; /* Rasm biroz kattalashadi */
+        width: 80%; 
+        height: auto;
     }
 
     .nas_content {
-        width: 100%; /* Matn to'liq enini egallaydi */
+        width: 100%;
     }
 }
 
-/* Mobil versiya (540px dan kichik ekranlar) */
+
 @media (max-width: 540px) {
     .nas .container {
-        padding: 0 15px; /* Mobilda chetlarga taqalib qolmasligi uchun */
+        padding: 0 15px;
     }
 
     .nas_content {
-        text-align: center; /* Barcha matnlar markazga keladi */
+        text-align: center;
     }
 
-    /* Subtitle (dumaloqcha bilan) markazga kelishi uchun */
+   
     .nas_subtitle {
         justify-content: center;
     }
 
-    /* Link markazga kelishi uchun */
+  
     .nas_link {
         justify-content: center;
     }
@@ -125,6 +122,6 @@
     }
 
     .nas_img {
-        width: 100%; /* Mobilda rasm to'liq enni egallaydi */
+        width: 100%; 
     }
 }
