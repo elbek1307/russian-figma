@@ -13,10 +13,12 @@
 /* Rasm qismi */
 .nas_left {
     width: 45%;
+    height: 660px;
 }
 
 .nas_img {
     width: 100%;
+    
     height: auto;
     display: block;
     object-fit: cover;
