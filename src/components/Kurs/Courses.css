@@ -115,11 +115,7 @@
     transition: all 0.3s;
 }
 
-/* =========================================
-   MAVZULAR (THEMES) - Ranglar va Hoverlar
-========================================= */
 
-/* 1. KO'K (Blue) */
 .blue_theme:hover { border-color: #3a3b98; }
 .blue_theme .course_name { color: #3a3b98; }
 .blue_theme .course_badge { background-color: #3a3b98; }
@@ -129,7 +125,7 @@
 .blue_theme .btn_more { background-color: #eef0ff; color: #3a3b98; }
 .blue_theme .btn_more:hover { background-color: #daddff; }
 
-/* 2. YASHIL (Green) */
+
 .green_theme:hover { border-color: #51a540; }
 .green_theme .course_name { color: #51a540; }
 .green_theme .course_badge { background-color: #51a540; }
@@ -139,7 +135,7 @@
 .green_theme .btn_more { background-color: #eef8ec; color: #51a540; }
 .green_theme .btn_more:hover { background-color: #dcf1d8; }
 
-/* 3. HAVORANG (Teal) */
+
 .teal_theme:hover { border-color: #009e90; }
 .teal_theme .course_name { color: #009e90; }
 .teal_theme .course_badge { background-color: #009e90; }
@@ -149,9 +145,7 @@
 .teal_theme .btn_more { background-color: #e2f6f4; color: #009e90; }
 .teal_theme .btn_more:hover { background-color: #ceefeb; }
 
-/* =========================================
-   MEDIA QUERIES (Moslashuvchanlik)
-========================================= */
+
 @media (max-width: 1150px) {
     .courses_list {
         flex-wrap: wrap;
