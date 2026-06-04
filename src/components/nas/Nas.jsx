@@ -6,7 +6,7 @@ import './Nas.css';
 import nasImg from './nasimg.jpg'; 
 
 const Nas = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <section className="nas">
