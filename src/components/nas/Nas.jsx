@@ -2,20 +2,20 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Nas.css';
 
-// Rasm manzilini o'zingiz to'g'rilab olasiz
-import nasImg from './nas-img.jpg'; 
+
+import nasImg from './nasimg.jpg'; 
 
 const Nas = () => {
-    // useTranslation() funksiya ko'rinishida chaqirildi
-    const { t } = useTranslation();
+    
+    const { t, i18n } = useTranslation();
 
     return (
         <section className="nas">
             <div className="container">
-                {/* 1. Rasm */}
+                
                 <img src={nasImg} alt="О нас" className="nas_img" />
                 
-                {/* 2. Matnlar qismi */}
+
                 <div className="nas_content">
                     <span className="nas_subtitle">{t('nas.subtitle')}</span>
                     
