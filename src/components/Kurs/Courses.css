@@ -1,0 +1,165 @@
+.courses {
+    padding: 60px 0;
+    font-family: sans-serif;
+}
+
+.courses_title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.courses_list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course_item {
+    background-color: #ffffff;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    /* Hover bo'lganda element qimirlab ketmasligi uchun shaffof ramka */
+    border: 2px solid transparent; 
+    transition: all 0.3s;
+}
+
+.course_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.course_content {
+    padding: 30px;
+    padding-bottom: 20px;
+    flex-grow: 1;
+}
+
+.top_text {
+    font-size: 14px;
+    color: #888888;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.course_name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    white-space: pre-line;
+}
+
+.course_badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.course_date {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.course_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.course_info {
+    padding-left: 10px;
+}
+
+.course_info p {
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 5px;
+}
+
+.course_img_wrapper img {
+    width: 100px;
+    height: auto;
+}
+
+.course_availability {
+    font-size: 14px;
+    color: #888888;
+}
+
+.course_actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.course_actions button {
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* =========================================
+   MAVZULAR (THEMES) - Ranglar va Hoverlar
+========================================= */
+
+/* 1. KO'K (Blue) */
+.blue_theme:hover { border-color: #3a3b98; }
+.blue_theme .course_name { color: #3a3b98; }
+.blue_theme .course_badge { background-color: #3a3b98; }
+.blue_theme .course_info { border-left: 2px solid #3a3b98; }
+.blue_theme .btn_reg { background-color: #3a3b98; color: #ffffff; }
+.blue_theme .btn_reg:hover { background-color: #2c2c75; }
+.blue_theme .btn_more { background-color: #eef0ff; color: #3a3b98; }
+.blue_theme .btn_more:hover { background-color: #daddff; }
+
+/* 2. YASHIL (Green) */
+.green_theme:hover { border-color: #51a540; }
+.green_theme .course_name { color: #51a540; }
+.green_theme .course_badge { background-color: #51a540; }
+.green_theme .course_info { border-left: 2px solid #51a540; }
+.green_theme .btn_reg { background-color: #51a540; color: #ffffff; }
+.green_theme .btn_reg:hover { background-color: #3f8031; }
+.green_theme .btn_more { background-color: #eef8ec; color: #51a540; }
+.green_theme .btn_more:hover { background-color: #dcf1d8; }
+
+/* 3. HAVORANG (Teal) */
+.teal_theme:hover { border-color: #009e90; }
+.teal_theme .course_name { color: #009e90; }
+.teal_theme .course_badge { background-color: #009e90; }
+.teal_theme .course_info { border-left: 2px solid #009e90; }
+.teal_theme .btn_reg { background-color: #009e90; color: #ffffff; }
+.teal_theme .btn_reg:hover { background-color: #007a6f; }
+.teal_theme .btn_more { background-color: #e2f6f4; color: #009e90; }
+.teal_theme .btn_more:hover { background-color: #ceefeb; }
+
+/* =========================================
+   MEDIA QUERIES (Moslashuvchanlik)
+========================================= */
+@media (max-width: 1150px) {
+    .courses_list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .course_item {
+        width: 100%;
+    }
+}
